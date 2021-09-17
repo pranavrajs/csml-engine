@@ -12,7 +12,7 @@
             "required": true
         },
         "POSTGRESQL_URL": {
-            "value: ""
+            "value": ""
         },
         "ENGINE_SERVER_API_KEYS": {
             "generator": "secret"
