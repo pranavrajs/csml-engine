@@ -5,37 +5,20 @@
     "success_url": "/",
     "keywords": ["rust", "csml"],
     "website": "https://www.csml.dev/",
+    "addons": ["heroku-postgresql"],
     "env": {
         "ENGINE_DB_TYPE": {
-            "value": "mongodb",
+            "value": "postgresql",
             "required": true
         },
-
-        "MONGODB_HOST": {
-            "value": "localhost",
-            "required": false
+        "POSTGRESQL_URL": {
+            "value: ""
         },
-        "MONGODB_PORT": {
-            "value": "27017",
-            "required": false
+        "ENGINE_SERVER_API_KEYS": {
+            "generator": "secret"
         },
-        "MONGODB_DATABASE": {
-            "value": "csml",
-            "required": false
-        },
-        "MONGODB_USERNAME": {
-            "required": false
-        },
-        "MONGODB_PASSWORD": {
-            "required": false
-        },
-
-        "MONGODB_URI": {
-            "required": false
-        },
-
         "ENCRYPTION_SECRET": {
-            "required": false
+            "generator": "secret"
         }
     },
     "buildpacks": [
