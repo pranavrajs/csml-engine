@@ -23,7 +23,7 @@
     },
     "buildpacks": [
         {
-          "url": "https://github.com/CSML-by-Clevy/heroku-buildpack-csml"
+          "url": "git@github.com:pranavrajs/heroku-buildpack-csml.git"
         }
     ]
 }
